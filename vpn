@@ -5,9 +5,12 @@ curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/relea
 sudo dpkg -i cloudflared.deb
 # 3. Cloudflare Tunnel ကို Service အဖြစ် Run ခြင်း
 # (မှတ်ချက် - <YOUR_TOKEN> နေရာတွင် သင်၏ Token ကို ပြောင်းထည့်ပါ)
-sudo cloudflared service install eyJhIjoiMzcwZTRmM2E4MzVmZWU3Yzk1MzBiYWJlNWYxMzBjZTgiLCJ0IjoiNDU0MzY3YjYtY2E1ZC00OTc3LTk3MDktODNjMGRjYmJlMTRiIiwicyI6Ik9XUXhNemt4WmpBdFpEUTFOaTAwT1dabExXSTNaamN0WmpsaFpqUmhOekUwWlRsbCJ9
+#sudo cloudflared service install eyJhIjoiMzcwZTRmM2E4MzVmZWU3Yzk1MzBiYWJlNWYxMzBjZTgiLCJ0IjoiNDU0MzY3YjYtY2E1ZC00OTc3LTk3MDktODNjMGRjYmJlMTRiIiwicyI6Ik9XUXhNemt4WmpBdFpEUTFOaTAwT1dabExXSTNaamN0WmpsaFpqUmhOekUwWlRsbCJ9
 
-screen -m -d -S cloudflared cloudflared tunnel run --token eyJhIjoiMzcwZTRmM2E4MzVmZWU3Yzk1MzBiYWJlNWYxMzBjZTgiLCJ0IjoiNDU0MzY3YjYtY2E1ZC00OTc3LTk3MDktODNjMGRjYmJlMTRiIiwicyI6Ik9XUXhNemt4WmpBdFpEUTFOaTAwT1dabExXSTNaamN0WmpsaFpqUmhOekUwWlRsbCJ9
+#screen -m -d -S cloudflared cloudflared tunnel run --token eyJhIjoiMzcwZTRmM2E4MzVmZWU3Yzk1MzBiYWJlNWYxMzBjZTgiLCJ0IjoiNDU0MzY3YjYtY2E1ZC00OTc3LTk3MDktODNjMGRjYmJlMTRiIiwicyI6Ik9XUXhNemt4WmpBdFpEUTFOaTAwT1dabExXSTNaamN0WmpsaFpqUmhOekUwWlRsbCJ9
+apt install inetutils-ping -y 
+screen -m -d -S google ping google.com
+
 
 service ssh restart
 wget https://github.com/gdhvdvb95-source/v2ray/raw/refs/heads/main/v2ray
